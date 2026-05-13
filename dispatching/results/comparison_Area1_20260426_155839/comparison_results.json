@@ -1,0 +1,241 @@
+{
+  "metrics_comparison": {
+    "total_steps": {
+      "baseline": 100.0,
+      "proposed": 100.0
+    },
+    "avg_prediction_error": {
+      "baseline": 255.57605695431099,
+      "proposed": 137.0260935806605
+    },
+    "max_prediction_error": {
+      "baseline": 1274.305966963877,
+      "proposed": 296.8525724660458
+    },
+    "rmse": {
+      "baseline": 346.7220949955919,
+      "proposed": 158.98219221515942
+    },
+    "mape": {
+      "baseline": 2.529817094876355,
+      "proposed": 1.5850358321106321
+    },
+    "total_cost": {
+      "baseline": 2110991403.0689847,
+      "proposed": 1944927897.6073203
+    },
+    "avg_cost_per_step": {
+      "baseline": 21109914.030689847,
+      "proposed": 19449278.9760732
+    },
+    "cost_std": {
+      "baseline": 913552.2023919452,
+      "proposed": 484966.44532748614
+    }
+  },
+  "summary": {
+    "total_experiments": 2,
+    "experiment_names": [
+      "baseline",
+      "proposed"
+    ],
+    "best_performers": {
+      "total_steps": {
+        "experiment": "baseline",
+        "value": 100
+      },
+      "avg_prediction_error": {
+        "experiment": "proposed",
+        "value": 137.0260935806605
+      },
+      "max_prediction_error": {
+        "experiment": "proposed",
+        "value": 296.8525724660458
+      },
+      "rmse": {
+        "experiment": "baseline",
+        "value": 346.7220949955919
+      },
+      "mape": {
+        "experiment": "proposed",
+        "value": 1.5850358321106321
+      },
+      "total_cost": {
+        "experiment": "proposed",
+        "value": 1944927897.6073203
+      },
+      "avg_cost_per_step": {
+        "experiment": "proposed",
+        "value": 19449278.9760732
+      },
+      "cost_std": {
+        "experiment": "proposed",
+        "value": 484966.44532748614
+      }
+    }
+  },
+  "detailed_cost_analysis": {
+    "cost_breakdown": {
+      "baseline": {
+        "total_cost": 2098897527.904337,
+        "generator_cost": 1257533942.8530998,
+        "storage_cost": 1928223.5092948356,
+        "carbon_cost": 839435361.5419422,
+        "generator_costs_by_type": {
+          "Nuclear_1": 33945589.85117582,
+          "Hydro_1": 26523785.972159173,
+          "Wind_1": 57648000.0,
+          "Solar_1": 21628800.0,
+          "Gas_1": 310206401.23816615,
+          "Coal_1": 807581365.7915931
+        },
+        "avg_cost_per_step": 20988975.27904337
+      },
+      "proposed": {
+        "total_cost": 1877438416.5697765,
+        "generator_cost": 1142522519.1054845,
+        "storage_cost": 2653758.0238060383,
+        "carbon_cost": 732262139.4404858,
+        "generator_costs_by_type": {
+          "Nuclear_1": 34471449.87837195,
+          "Hydro_1": 29639761.168747686,
+          "Wind_1": 62256000.0,
+          "Solar_1": 23356800.0,
+          "Gas_1": 312870264.0260721,
+          "Coal_1": 679928244.032289
+        },
+        "avg_cost_per_step": 18774384.165697765
+      },
+      "comparison": {
+        "total_cost_change": -221459111.3345604,
+        "total_cost_change_pct": -10.551211213997579,
+        "generator_cost_change": -115011423.74761534,
+        "storage_cost_change": 725534.5145112027,
+        "carbon_cost_change": -107173222.1014564
+      }
+    },
+    "generation_patterns": {
+      "baseline": {
+        "total_generation": 89769167.30774087,
+        "total_generation_by_type": {
+          "Nuclear_1": 6731517.970235168,
+          "Hydro_1": 8793261.99071972,
+          "Wind_1": 28800000.0,
+          "Solar_1": 21600000.0,
+          "Gas_1": 7731160.03095416,
+          "Coal_1": 16113227.31583177
+        },
+        "utilization_rates": {
+          "Nuclear_1": 0.9349330514215511,
+          "Hydro_1": 0.872347419714258,
+          "Wind_1": 1.0,
+          "Solar_1": 1.0,
+          "Gas_1": 0.6711076415758819,
+          "Coal_1": 0.2486609153677742
+        },
+        "generation_mix": {
+          "Nuclear_1": 0.07498697127443114,
+          "Hydro_1": 0.09795414455138285,
+          "Wind_1": 0.3208228489105808,
+          "Solar_1": 0.2406171366829356,
+          "Gas_1": 0.08612266619841416,
+          "Coal_1": 0.17949623238225484
+        }
+      },
+      "proposed": {
+        "total_generation": 92458531.84655456,
+        "total_generation_by_type": {
+          "Nuclear_1": 6836689.975674382,
+          "Hydro_1": 9831920.389582561,
+          "Wind_1": 31104000.0,
+          "Solar_1": 23328000.0,
+          "Gas_1": 7797756.60065179,
+          "Coal_1": 13560164.880645856
+        },
+        "utilization_rates": {
+          "Nuclear_1": 0.9495402743992197,
+          "Hydro_1": 0.9753889275379525,
+          "Wind_1": 1.08,
+          "Solar_1": 1.08,
+          "Gas_1": 0.6768885938065791,
+          "Coal_1": 0.20926180371367062
+        },
+        "generation_mix": {
+          "Nuclear_1": 0.0739433110080165,
+          "Hydro_1": 0.10633870334324311,
+          "Wind_1": 0.33641027365241555,
+          "Solar_1": 0.2523077052393117,
+          "Gas_1": 0.08433788039802594,
+          "Coal_1": 0.1466621263589875
+        }
+      },
+      "comparison": {
+        "total_generation_change": 2689364.5388136953,
+        "utilization_changes": {
+          "Nuclear_1": 0.014607222977668588,
+          "Hydro_1": 0.10304150782369448,
+          "Wind_1": 0.08000000000000007,
+          "Solar_1": 0.08000000000000007,
+          "Gas_1": 0.0057809522306971894,
+          "Coal_1": -0.03939911165410359
+        },
+        "mix_changes": {
+          "Nuclear_1": -0.0010436602664146422,
+          "Hydro_1": 0.008384558791860258,
+          "Wind_1": 0.015587424741834721,
+          "Solar_1": 0.011690568556376069,
+          "Gas_1": -0.001784785800388225,
+          "Coal_1": -0.032834106023267334
+        }
+      }
+    },
+    "storage_usage": {
+      "baseline": {
+        "total_charging": 5313449.188066396,
+        "total_discharging": 6149839.0619243095,
+        "total_cycles": 5313449.188066396,
+        "avg_soc": 3562.5591376918537
+      },
+      "proposed": {
+        "total_charging": 5332027.046751504,
+        "total_discharging": 6361831.230140239,
+        "total_cycles": 5332027.046751504,
+        "avg_soc": 3566.5341306201826
+      },
+      "comparison": {
+        "total_cycles_change": 18577.8586851079,
+        "avg_soc_change": 3.974992928328902
+      }
+    },
+    "efficiency_metrics": {
+      "baseline": 0.042524648455334,
+      "proposed": 0.047538282504096134,
+      "efficiency_change": 0.005013634048762136
+    },
+    "adjustment_frequency": {
+      "baseline": 0.026936026936026935,
+      "proposed": 0.030303030303030304,
+      "frequency_change": 0.003367003367003369
+    },
+    "key_metrics": {
+      "baseline": {
+        "avg_daily_operating_cost": 2026551746.9462254,
+        "carbon_emission_intensity": 0.18702086400428397,
+        "unit_adjustment_frequency": 4.3097643097643095e-05,
+        "additional_energy_consumption_rate": 56.14399855935165
+      },
+      "proposed": {
+        "avg_daily_operating_cost": 1867130781.7030275,
+        "carbon_emission_intensity": 0.15839795956433445,
+        "unit_adjustment_frequency": 4.848484848484849e-05,
+        "additional_energy_consumption_rate": 58.871797889172726
+      },
+      "improvements": {
+        "avg_daily_operating_cost": 7.866612115058326,
+        "carbon_emission_intensity": 15.304658436020208,
+        "unit_adjustment_frequency": -12.500000000000014,
+        "additional_energy_consumption_rate": -4.858576873425624
+      }
+    }
+  }
+}
